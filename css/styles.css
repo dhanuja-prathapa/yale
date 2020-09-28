@@ -1,0 +1,38 @@
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "Block1 Block2";
+}
+.block-1{
+    grid-area: Block1;
+    margin: auto;
+    background-color: white;
+}
+.block-2{
+    grid-area: Block2;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.blocks{
+    padding-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "Block-1 Block-2";
+}
+.inputEmail{
+    grid-area: Block-1;
+}
+.newsBtn{
+    grid-area: Block-2;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-text{
+    font-size: x-large;
+    font-weight: 500;
+}
