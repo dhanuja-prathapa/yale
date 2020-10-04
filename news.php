@@ -81,7 +81,7 @@
             foreach ($newsList as $news){
             echo "
             <div class='col-md-4'>
-              <div class='card mb-4 box-shadow'>
+              <div class='card mb-4 box-shadow'><a href='topic.php?id=$news[id]'>
                 <img class='card-img-top' src='images/$news[image]' alt='Card image cap'>
                 <div class='card-body'>
                   <p class='card-text'>$news[title]</p>
@@ -93,7 +93,7 @@
                     <small class='text-muted'>$news[date]</small>
                   </div>
                 </div>
-              </div>
+              </div></a>
             </div>";} ?>
           </div>
         </div>

@@ -14,7 +14,10 @@
     padding: 20px;
     border: #e8e7e6 2px solid;
 }
-
+.card a{
+    color: #696b6d !important;
+    text-decoration:none !important;
+}
 .blocks{
     padding-top: 10px;
     display: grid;
