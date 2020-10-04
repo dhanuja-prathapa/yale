@@ -10,7 +10,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/articulate.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("speak").click(function (){
+                $('article').articulate('speak');
+            })
+        })
+    </script>
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -85,6 +93,8 @@ echo "
 
 ";
 $conn->close(); ?>
+        <p class="article">Hello World</p>
+        <button class="speak">Speak</button>
     </div>
     </div>
 </main>
@@ -102,10 +112,10 @@ $conn->close(); ?>
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="js/vendor/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/vendor/holder.min.js"></script>
+
 </body>
 </html>
 
