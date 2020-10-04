@@ -12,6 +12,7 @@
     grid-area: Block2;
     background-color: #f8f9fa;
     padding: 20px;
+    border: #e8e7e6 2px solid;
 }
 
 .blocks{
