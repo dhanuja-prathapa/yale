@@ -9,11 +9,11 @@
     <title>News - YALE School of Art</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/articulate.min.js"></script>
+    <script src="./js/articulate.min.js"></script>
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -82,7 +82,7 @@ $position =$item['imgPosition'];
 echo "
 <div class='row'>
 <div class='col-12' style='height: 600px; padding-left:0; padding-right:0;background-position: $position; background-image: url(images/$item[image]);background-size: cover;background-repeat: no-repeat; color: white'><div class='col-12 bg-dark'><div class='row'><div class='col-1' style='margin: auto'><a href='index.php' onclick='stop()' class='btn btn-primary'>Back</a></div><h3 class='col-9' style='padding: 0.75rem;text-align: center;'>$item[title]</h3><div class='col-2' style='margin: auto;'><p style='text-align: right; margin: 0'>$item[date]</p></div></div> </div></div>
-<p class='col-12' id='article' style='padding-top:20px;color: rgb(41, 41, 41); font-size: 21px;; letter-spacing: -0.003em;line-height: 32px;font-weight: 400;'> <button style='margin-right: 7px;' onclick='speak()'><img style='width: 26px;' src='images/noise.png'></button>";echo nl2br($content); echo "</p>
+<p class='col-12' id='article' style='padding-top:20px;color: rgb(41, 41, 41); font-size: 21px;; letter-spacing: -0.003em;line-height: 32px;font-weight: 400;'> <button style='margin-right: 7px;' onclick='speak()'><img style='width: 26px;' src='./images/noise.png'></button>";echo nl2br($content); echo "</p>
 </div>
 
 ";
@@ -111,9 +111,9 @@ $conn->close(); ?>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/vendor/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/vendor/holder.min.js"></script>
+<script src="./js/vendor/popper.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/vendor/holder.min.js"></script>
 
 </body>
 </html>

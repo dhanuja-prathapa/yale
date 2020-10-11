@@ -9,10 +9,10 @@
     <title>News - YALE School of Art</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
   </head>
   <body>
 
@@ -53,10 +53,10 @@
         <div class="container">
           <div class="wrapper">
              <div class="block-1">
-                <img src="images/news.png" style="width: 360px">
+                <img src="./images/news.png" style="width: 360px">
              </div>
              <div class="block-2">
-             <img src="images/newsletter.png" style="width:200px;">
+             <img src="./images/newsletter.png" style="width:200px;">
                 <form>
                   <div class="form-group blocks">
                     <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address" style="max-width:300px" aria-describedby="emailHelp">
@@ -82,7 +82,7 @@
             echo "
             <div class='col-md-4'>
               <div class='card mb-4 box-shadow'><a href='topic.php?id=$news[id]'>
-                <img class='card-img-top' src='images/$news[image]' alt='Card image cap'>
+                <img class='card-img-top' src='./images/$news[image]' alt='Card image cap'>
                 <div class='card-body'>
                   <p class='card-text'>$news[title]</p>
                   <div class='d-flex justify-content-between align-items-center'>
@@ -116,8 +116,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/vendor/holder.min.js"></script>
+    <script src="./js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/vendor/holder.min.js"></script>
   </body>
 </html>
