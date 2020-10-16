@@ -66,16 +66,20 @@
                      function subscribe(){
                          let success = document.getElementById("successMsg");
                          let error = document.getElementById("errorMsg");
+                         let emailBox = document.getElementById("inputEmail1");
                          let email = document.getElementById("inputEmail1").value;
                          var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                          if (email.match(mailformat)){
                              success.style.display = "block";
-                             document.getElementById("inputEmail1").disabled = true;
+                             emailBox.disabled = true;
                              document.getElementById("newsBtn").style.display = "none";
                              error.style.display = "none";
+                             emailBox.classList.remove("is-invalid");
+                             emailBox.classList.add("is-valid");
                          }else {
                              error.style.display = "block";
-                             document.getElementById("inputEmail1").focus();
+                             emailBox.focus();
+                             emailBox.classList.add("is-invalid");
                          }
                      }
                  </script>
@@ -90,8 +94,7 @@
 
           <div class="row">
             <?php
-            //SESSION START
-            session_start();
+          
 
             require 'database.php';
             global $newsList;
