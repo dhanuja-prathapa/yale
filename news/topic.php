@@ -16,11 +16,10 @@
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-
 <header>
     <div class="navbar navbar-light bg-light box-shadow">
         <div class="container d-flex justify-content-between">
-            <a href="index.php" onclick="stop()" class="navbar-brand d-flex align-items-center">
+            <a href="#" class="navbar-brand d-flex align-items-center">
                 <strong>YALE SCHOOL OF ART</strong>
             </a>
             <div>
@@ -30,15 +29,16 @@
                 <a href=".././history/index.html" onclick="stop()" >
                     <button class="btn btn-outline-dark">History</button>
                 </a>
-            <a href=".././apply.html" onclick="stop()" >
-                <button class="btn btn-outline-dark">Apply</button>
-            </a>
-            <a href=".././gallery.html" onclick="stop()" >
-                <button class="btn btn-outline-dark">Gallery</button>
-            </a>
-            <a href="index.php" onclick="stop()" >
-                <button class="btn btn-outline-dark active">News</button>
-            </a></div>
+                <a href=".././apply.html" onclick="stop()" >
+                    <button class="btn btn-outline-dark">Apply</button>
+                </a>
+                <a href=".././gallery.html" onclick="stop()" >
+                    <button class="btn btn-outline-dark">Gallery</button>
+                </a>
+                <a href="index.php" onclick="stop()" >
+                    <button class="btn btn-outline-dark active">News</button>
+                </a>
+            </div>
         </div>
     </div>
 </header>
@@ -94,13 +94,12 @@ $conn->close(); ?>
     </div>
     </div>
 </main>
-<footer class="text-muted">
+<footer class="text-muted p-3">
     <div class="container">
         <p class="float-right">
             <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../..">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        <p>© 2020 Yale School Of Art</p>
     </div>
 </footer>
 

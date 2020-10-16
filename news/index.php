@@ -93,6 +93,7 @@
         <div class="container">
 
           <div class="row">
+
             <?php
           
 
@@ -100,7 +101,7 @@
             global $newsList;
             foreach ($newsList as $news){
             echo "
-            <div class='col-md-4'>
+            <div class='col-md-4 card-group'>
               <div class='card mb-4 box-shadow'><a href='topic.php?id=$news[id]'>
                 <img class='card-img-top' src='./images/$news[image]' alt='Card image cap'>
                 <div class='card-body'>
@@ -117,13 +118,12 @@
 
     </main>
 
-    <footer class="text-muted">
+    <footer class="text-muted p-3">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+          <p>© 2020 Yale School Of Art</p>
       </div>
     </footer>
 
