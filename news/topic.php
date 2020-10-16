@@ -40,7 +40,7 @@
     </div>
 </header>
 <main role="main">
-    <div class="bg-light">
+    <div style="background: #e9ecef">
     <div class="container">
 <?php
 
