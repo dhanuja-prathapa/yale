@@ -50,17 +50,36 @@
              <div class="block-1">
                 <img src="./images/news.png" style="width: 516px">
              </div>
-             <div class="block-2">
+             <div class="block-2" style="height: 275px">
              <img src="./images/newsletter.png" style="width:200px;">
-                <form>
-                  <div class="form-group blocks">
-                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
-                    <button type="submit" id="newsBtn" class="btn btn-primary">Submit</button>
-                  </form>
-                 <div class="alert alert-success" role="alert">
-                     A simple success alert—check it out!
+                 <div style="margin-top: 15px;">
+                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address" aria-describedby="emailHelp" style="margin-bottom: 10px;">
+                    <button type="submit" onclick="subscribe()" id="newsBtn" class="btn btn-primary" style="width: 100%">Submit</button>
                  </div>
-                  </div>
+                 <div id="successMsg" class="newsletterS alert alert-success" role="alert">
+                     Subscribe Successfully!
+                 </div>
+                 <div id="errorMsg" class="newsletterS alert alert-danger" role="alert">
+                     Enter a valid email!
+                 </div>
+                 <script>
+                     function subscribe(){
+                         let success = document.getElementById("successMsg");
+                         let error = document.getElementById("errorMsg");
+                         let email = document.getElementById("inputEmail1").value;
+                         var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                         if (email.match(mailformat)){
+                             success.style.display = "block";
+                             document.getElementById("inputEmail1").disabled = true;
+                             document.getElementById("newsBtn").style.display = "none";
+                             error.style.display = "none";
+                         }else {
+                             error.style.display = "block";
+                             document.getElementById("inputEmail1").focus();
+                         }
+                     }
+                 </script>
+             </div>
              </div>
           </div>
         </div>
@@ -84,10 +103,6 @@
                 <div class='card-body'>
                   <p class='card-text'>$news[title]</p>
                   <div class='d-flex justify-content-between align-items-center'>
-                    <div class='btn-group'>
-                      <button type='button' class='btn btn-sm btn-outline-secondary'>View</button>
-                      <button type='button' class='btn btn-sm btn-outline-secondary'>Edit</button>
-                    </div>
                     <small class='text-muted'>$news[date]</small>
                   </div>
                 </div>
