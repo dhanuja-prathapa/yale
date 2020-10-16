@@ -30,6 +30,9 @@ a:hover {
     .block-2{
         grid-area: Block2;
     }
+    #newsLogo{
+        width: 400px;
+    }
 }
 .card a{
     color: #696b6d !important;
