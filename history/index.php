@@ -52,12 +52,6 @@
         <div class="container">
 
           <div class="row">
-            <?php
-            //SESSION START
-            session_start();
-            global $newsList;
-            foreach ($newsList as $news){
-            echo "
             <div class='col-md-4'>
               <div class='card mb-4 box-shadow'><a href='topic.php?id=$news[id]'>
                 <img class='card-img-top' src='./images/$news[image]' alt='Card image cap'>
@@ -72,7 +66,7 @@
                   </div>
                 </div>
               </div></a>
-            </div>";} ?>
+            </div>
           </div>
         </div>
       </div>
