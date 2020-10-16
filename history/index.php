@@ -103,7 +103,7 @@
                 </div>
                 <div class='card mb-4 box-shadow'>
                     <div class='card-body' style="margin: 0 auto;">
-                        <img src="images/insta.PNG">
+                        <div class="image-logo d-flex justify-content-center" ><img src="images/insta.PNG"></div>
                     </div>
                 </div>
             </div>
