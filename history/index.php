@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>News - YALE School of Art</title>
+    <title>History - YALE School of Art</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -22,17 +22,17 @@
             <strong>YALE SCHOOL OF ART</strong>
           </a>
             <div>
-                <a href=".././about.html" onclick="stop()" >
-                    <button class="btn btn-outline-dark">About</button>
+                <a href=".././about.html" >
+                    <button class="btn btn-outline-dark active">About</button>
                 </a>
-                <a href=".././apply.html" onclick="stop()" >
+                <a href=".././apply.html" >
                     <button class="btn btn-outline-dark">Apply</button>
                 </a>
-                <a href=".././gallery.html" onclick="stop()" >
+                <a href=".././gallery.html">
                     <button class="btn btn-outline-dark">Gallery</button>
                 </a>
-                <a href="index.php" onclick="stop()" >
-                    <button class="btn btn-outline-dark active">News</button>
+                <a href="index.php" >
+                    <button class="btn btn-outline-dark">News</button>
                 </a>
             </div>
         </div>
@@ -41,21 +41,9 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center" style="background-image:url(images/background.jpg)">
+      <section class="jumbotron text-center history-bg" style="background-image:url(images/history.png)">
         <div class="container">
           <div class="wrapper">
-             <div class="block-1">
-                <img src="./images/news.png" style="width: 360px">
-             </div>
-             <div class="block-2">
-             <img src="./images/newsletter.png" style="width:200px;">
-                <form>
-                  <div class="form-group blocks">
-                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
-                    <button type="submit" id="newsBtn" class="btn btn-primary">Submit</button>
-                  </form>
-                  </div>
-             </div>
           </div>
         </div>
       </section>
@@ -67,8 +55,6 @@
             <?php
             //SESSION START
             session_start();
-
-            require 'database.php';
             global $newsList;
             foreach ($newsList as $news){
             echo "

@@ -60,3 +60,10 @@ a:hover {
 .bg-dark-new{
     background-color: #343a4085 !important;
 }
+
+.history-bg{
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
