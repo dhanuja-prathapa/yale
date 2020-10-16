@@ -31,7 +31,7 @@ a:hover {
         grid-area: Block2;
     }
     #newsLogo{
-        width: 400px;
+        width: 400px !important;
     }
 }
 .card a{
