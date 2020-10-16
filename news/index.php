@@ -57,6 +57,9 @@
                     <input type="email" class="form-control" id="inputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
                     <button type="submit" id="newsBtn" class="btn btn-primary">Submit</button>
                   </form>
+                 <div class="alert alert-success" role="alert">
+                     A simple success alert—check it out!
+                 </div>
                   </div>
              </div>
           </div>
