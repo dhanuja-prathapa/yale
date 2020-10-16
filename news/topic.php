@@ -27,7 +27,7 @@
                 <a href=".././about.php" onclick="stop()" >
                     <button class="btn btn-outline-dark">About</button>
                 </a>
-                <a href=".././history/index.php" onclick="stop()" >
+                <a href=".././history/index.html" onclick="stop()" >
                     <button class="btn btn-outline-dark">History</button>
                 </a>
             <a href=".././apply.html" onclick="stop()" >
