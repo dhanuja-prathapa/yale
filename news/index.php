@@ -22,8 +22,11 @@
             <strong>YALE SCHOOL OF ART</strong>
           </a>
             <div>
-                <a href=".././about.html" onclick="stop()" >
+                <a href=".././about.php" onclick="stop()" >
                     <button class="btn btn-outline-dark">About</button>
+                </a>
+                <a href=".././history/index.php" onclick="stop()" >
+                    <button class="btn btn-outline-dark">History</button>
                 </a>
                 <a href=".././apply.html" onclick="stop()" >
                     <button class="btn btn-outline-dark">Apply</button>
@@ -45,7 +48,7 @@
         <div class="container">
           <div class="wrapper">
              <div class="block-1">
-                <img src="./images/news.png" style="width: 360px">
+                <img src="./images/news.png" style="width: 516px">
              </div>
              <div class="block-2">
              <img src="./images/newsletter.png" style="width:200px;">

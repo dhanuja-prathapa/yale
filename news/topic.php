@@ -24,9 +24,12 @@
                 <strong>YALE SCHOOL OF ART</strong>
             </a>
             <div>
-            <a href=".././about.html" onclick="stop()" >
-                <button class="btn btn-outline-dark">About</button>
-            </a>
+                <a href=".././about.php" onclick="stop()" >
+                    <button class="btn btn-outline-dark">About</button>
+                </a>
+                <a href=".././history/index.php" onclick="stop()" >
+                    <button class="btn btn-outline-dark">History</button>
+                </a>
             <a href=".././apply.html" onclick="stop()" >
                 <button class="btn btn-outline-dark">Apply</button>
             </a>
@@ -40,7 +43,7 @@
     </div>
 </header>
 <main role="main">
-    <div style="background: #e9ecef">
+    <div style="background: #e9ecef; padding-top: 16px;">
     <div class="container">
 <?php
 
@@ -74,7 +77,8 @@ $position =$item['imgPosition'];
 echo "
 <div class='row'>
 <div class='col-12' style='height: 600px; padding-left:0; padding-right:0;background-position: $position; background-image: url(images/$item[image]);background-size: cover;background-repeat: no-repeat; color: white'><div class='col-12 bg-dark-new'><div class='row'><div class='col-1' style='margin: auto'><a href='index.php' onclick='stop()' class='btn btn-primary'>Back</a></div><h3 class='col-9' style='padding: 0.75rem;text-align: center;'>$item[title]</h3><div class='col-2' style='margin: auto;'><p style='text-align: right; margin: 0'>$item[date]</p></div></div> </div></div>
-<p class='col-12' id='article' style='padding-top:20px;color: rgb(41, 41, 41); font-size: 21px;; letter-spacing: -0.003em;line-height: 32px;font-weight: 400;'> <button style='margin-right: 7px;' onclick='speak()'><img style='width: 26px;' src='./images/noise.png'></button>";echo nl2br($content); echo "</p>
+<div class='card mb-4 box-shadow'>
+                    <div class='card-body'><p class='col-12' id='article' style='padding-top:20px;color: rgb(41, 41, 41); font-size: 21px;; letter-spacing: -0.003em;line-height: 32px;font-weight: 400;'> <button style='margin-right: 7px;' onclick='speak()'><img style='width: 26px;' src='./images/noise.png'></button>";echo nl2br($content); echo "</p></div></div>
 </div>
 
 ";
