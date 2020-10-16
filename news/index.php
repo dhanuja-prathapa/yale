@@ -44,7 +44,7 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center" style="background-image:url(images/background.jpg)">
+      <section class="jumbotron text-center" style="background-image:url(images/background.jpg);margin-bottom: 0;">
         <div class="container">
           <div class="wrapper">
              <div class="block-1">
